@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/17cd835c07.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Theo Krdozo</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="logo.png" alt="Logo Theo">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/TheoKrdozo">Github</a>
+            </li>
+            <li>
+                <a target="_blank" href="meilto:salatielcl@gmail.com">E-mail</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/theokrdozo/">Linkedin</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="nome">
+                <h1>Theo Krdozo</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+            <div onclick="displayAbout()" id="seta">
+                <i id="animation" class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, est suscipit! Sapiente incidunt
+                    ipsam ab accusamus quis quasi deserunt, consectetur, sunt optio aliquid, dolorum porro esse officiis
+                    nihil dolorem.
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout(){
+            var seta = document.getElementById('animation');
+            seta.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
